@@ -1,11 +1,38 @@
 import React from "react";
+import Donate from "../components/donate-button-link";
+import GetHelp from "../components/help-button-link";
 import Logo from "../components/logo";
+
 
 const HomePage =()=>{
 
     return (
         <div>
-            <Logo />
+            <section style={{display:"inline"}}>
+                <Logo  />
+                <GetHelp />
+                <Donate />
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        information
+                    </li>
+                    <li>
+                        about us
+                    </li>
+                    <li>
+                        news
+                    </li>
+                    <li>
+                        get involve
+                    </li>
+                    <li>
+                        shop
+                    </li>
+                </ul>
+            </section>
+            
         </div>
     )
 }
