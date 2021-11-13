@@ -8,10 +8,12 @@ const HomePage =()=>{
 
     return (
         <div>
-            <section style={{display:"inline"}}>
-                <Logo  />
+            <section>
+                
+                <Logo />
                 <GetHelp />
                 <Donate />
+                
             </section>
             <section>
                 <ul>

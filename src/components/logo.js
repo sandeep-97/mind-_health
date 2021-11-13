@@ -1,11 +1,12 @@
 import React from "react";
+import styles from './components_styles/logo.module.scss'
 
 const Logo =()=>{
 
     // creating reuse component of logo
     return (
-        <div style={{display:"inline"}}>
-            <h1 style={{display:"inline"}}>logo</h1>
+        <div  className={styles.logo}>
+            <h1 className={styles.logo__heading}>logo</h1>
         </div>
     )
 }

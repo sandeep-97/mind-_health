@@ -1,11 +1,11 @@
 import React from "react";
-
+import styles from './components_styles/donate-button-link.module.scss'
 const Donate=()=>{
 
     // creating donate reuse component 
     return(
-        <div style={{display:"inline"}}>
-            <a href="b">
+        <div className={styles.donate}>
+            <a href="b" className={styles.donate__a}>
                 please donate
             </a>
         </div>
