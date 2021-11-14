@@ -1,0 +1,57 @@
+@import './variable.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+.section_heading{
+    width: 100%;
+    display: flex;
+    background-color:rgb(222, 239, 240);
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    
+    .div_logo{
+        width: 100%;
+        padding-left: 2em;
+        display: flex;
+        flex:2;
+        justify-content: start;
+        align-items: center;
+    }
+    .div_help{
+        width: 100%;
+        @extend %heading_button
+    }
+    .div_donate{
+        width: 100%;
+        @extend %heading_button
+    }
+}
+.nav_section{
+    width: 100%;
+    //margin-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color:rgb(94, 86, 202);
+    display: flex;
+    
+    .nav_list{
+        list-style: none;
+        display: flex;
+        //background-color:rgb(94, 86, 202);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        li{
+            width: 100%;
+            //background-color:rgb(94, 86, 202);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            color: rgb(246, 249, 250);
+        }
+    }
+}

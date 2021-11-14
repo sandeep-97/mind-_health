@@ -1,7 +1,11 @@
+@import '../../style/variable.scss';
 .donate{
-    display: inline;
-    background-color: beige;
+    display: inline-flex;
+    
     &__a{
         text-decoration: none;
+        text-transform:capitalize;
+        background-color: rgb(189, 189, 107);
+        @extend %button_help_donate
     }
 }

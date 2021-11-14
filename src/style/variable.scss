@@ -1,0 +1,17 @@
+
+%heading_button{
+    display: flex-start;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+%button_help_donate{
+    padding: 0.5em;
+    padding-left:2em;
+    padding-right: 2em;
+    border-radius: 10px;
+}

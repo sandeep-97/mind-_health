@@ -1,0 +1,12 @@
+@import '../../style/variable.scss';
+
+.help{
+    display: inline-flex;  
+    &__a{
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        background-color: burlywood;
+        @extend %button_help_donate
+    }
+}
