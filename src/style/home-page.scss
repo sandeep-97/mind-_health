@@ -12,20 +12,21 @@
     justify-content: center;
     
     .div_logo{
-        width: 100%;
-        padding-left: 2em;
         display: flex;
         flex:2;
-        justify-content: start;
+        padding-left: 2em;
+        justify-content: flex-start;
         align-items: center;
     }
     .div_help{
-        width: 100%;
+        
         @extend %heading_button
+        
     }
     .div_donate{
-        width: 100%;
+        
         @extend %heading_button
+        
     }
 }
 .nav_section{
@@ -51,7 +52,14 @@
             justify-content: space-between;
             align-items: center;
             justify-content: center;
-            color: rgb(246, 249, 250);
+            a{
+                text-decoration: none;
+                text-transform: capitalize;
+                color: rgb(246, 249, 250);
+            }
+            a:hover{
+                text-decoration: underline;
+            }
         }
     }
 }
