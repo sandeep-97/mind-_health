@@ -100,7 +100,6 @@ const HomePage =()=>{
                         <a href='/'   onClick={()=>{monitoringNavState('information')}} >
                             information and support
                         </a>
-                        {open.informationNav?<Information />:null}
                     </li>
                     <li>
                         <a href='/' onClick={()=>monitoringNavState('about')} >
@@ -123,6 +122,10 @@ const HomePage =()=>{
                         </a>
                     </li>
                 </ul>
+                
+            </section>
+            <section>
+                {open.informationNav?<Information />:null}
             </section>
             
         </div>
