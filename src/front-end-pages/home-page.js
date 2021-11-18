@@ -98,7 +98,7 @@ const HomePage =()=>{
                 <ul className='nav_list'>
                     <li> 
                         <a href='/'   onClick={()=>{monitoringNavState('information')}} >
-                            information
+                            information and support
                         </a>
                         {open.informationNav?<Information />:null}
                     </li>
