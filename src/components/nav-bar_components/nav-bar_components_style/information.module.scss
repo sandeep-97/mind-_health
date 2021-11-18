@@ -1,0 +1,33 @@
+
+.subnav_div{
+    display: flex;
+    flex-wrap: wrap;
+    top: 6em;
+    z-index: 100;
+    width: 420px;
+    height: 80px;
+    position: relative;
+    background-color: burlywood;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    &__section{
+        width: 100%;
+        z-index: 100;
+        &__ul{
+            list-style: none;
+            font-size: 1em;
+        }
+    }
+}
+.subnav_div:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-right: 13px solid transparent;
+    border-top: 13px solid rgba(223, 163, 35, 0.6);
+    border-bottom: 13px solid transparent;
+ }

@@ -74,6 +74,12 @@ const HomePage =()=>{
         console.log(open.informationNav)
     }
 
+    const upvote=(e)=>{
+        // e.stopPropogation()
+        // e.nativeEvent.stopImmediatePropagation();
+        e.preventDefault()    
+    }
+
     return (
         <div>
             <section className='section_heading'>
@@ -88,10 +94,10 @@ const HomePage =()=>{
                 </div>   
             </section>
 
-            <section className='nav_section'>
+            <section className='nav_section' onClick={upvote}>
                 <ul className='nav_list'>
                     <li> 
-                        <a href='a' onClick={()=>{monitoringNavState('information')}} >
+                        <a href='/'   onClick={()=>{monitoringNavState('information')}} >
                             information
                         </a>
                         {open.informationNav?<Information />:null}
