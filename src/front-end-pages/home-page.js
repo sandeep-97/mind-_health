@@ -14,7 +14,6 @@ const HomePage =()=>{
         involveNav:false,
         consultNav:false
     })
-    console.log('hi')
     const monitoringNavState=(navSate)=>{
         console.log(1)
         switch(navSate){
@@ -98,7 +97,7 @@ const HomePage =()=>{
                 <ul className='nav_list'>
                     <li> 
                         <a href='/'   onClick={()=>{monitoringNavState('information')}} >
-                            information and support
+                            information
                         </a>
                     </li>
                     <li>
