@@ -7,10 +7,14 @@ const Information = () => {
             <section className={styles.subnav_div__section}>
                 <ul className={styles.subnav_div__section__ul}>
                     <li>
-                        information and support
+                        <a href='/'>
+                            Patrick blogs about his first schizoaffective episode, inequalities in the mental health system and looking after his mental health.
+                        </a>
                     </li>
                     <li>
-                        coronavirus
+                        <a href='/'>
+                            We're fighting for mental health. For support. For respect. For you.
+                        </a>
                     </li>
                 </ul>
             </section>

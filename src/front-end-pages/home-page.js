@@ -19,7 +19,6 @@ const HomePage =()=>{
     // this function sets the state value of the nave components when to visible by
     // controlling their boolean
     const monitoringNavState=(navSate)=>{
-        console.log(1)
         switch(navSate){
             case 'information':
                 setOpen({
@@ -74,7 +73,6 @@ const HomePage =()=>{
             default:
                 setOpen(open)
         }
-        console.log(open.informationNav)
     }
 
     const upvote=(e)=>{
@@ -129,20 +127,7 @@ const HomePage =()=>{
                 
             </section>
             <section className='body-section'>
-                <p>
-                    What is Sentiment Analysis?
-
-Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
-What is Sentiment Analysis?
-
-Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
-What is Sentiment Analysis?
-
-Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
-What is Sentiment Analysis?
-
-Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
-                </p>
+               
             </section>
             
         </div>

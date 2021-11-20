@@ -1,22 +1,15 @@
-
+@import '../../../style/variable.scss';
 .subnav_div{
-    display: flex;
-    flex-wrap: wrap;
-    top: 10em;
-    z-index: 100;
-    width: 60%;
-    height: 30em;
-    position: absolute;
-    background-color: burlywood;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    @extend %subNav_block;
+    margin-left: 40em;
     &__section{
         width: 100%;
         z-index: 100;
+        padding: 1em;
         &__ul{
             list-style: none;
             font-size: 1em;
+            display: flex;           
         }
     }
 }
