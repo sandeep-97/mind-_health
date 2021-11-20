@@ -7,6 +7,7 @@ import '../style/home-page.scss'
 
 const HomePage =()=>{
 
+    // this useState controlls the nav state 
     const [open,setOpen]=useState({
         informationNav:false,
         aboutNav:false,
@@ -14,6 +15,9 @@ const HomePage =()=>{
         involveNav:false,
         consultNav:false
     })
+
+    // this function sets the state value of the nave components when to visible by
+    // controlling their boolean
     const monitoringNavState=(navSate)=>{
         console.log(1)
         switch(navSate){
@@ -99,6 +103,7 @@ const HomePage =()=>{
                         <a href='/'   onClick={()=>{monitoringNavState('information')}} >
                             information
                         </a>
+                        {open.informationNav?<Information />:null}
                     </li>
                     <li>
                         <a href='/' onClick={()=>monitoringNavState('about')} >
@@ -123,8 +128,21 @@ const HomePage =()=>{
                 </ul>
                 
             </section>
-            <section>
-                {open.informationNav?<Information />:null}
+            <section className='body-section'>
+                <p>
+                    What is Sentiment Analysis?
+
+Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
+What is Sentiment Analysis?
+
+Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
+What is Sentiment Analysis?
+
+Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
+What is Sentiment Analysis?
+
+Sentiment analysis (also known as opinion mining) is one of the many applications of Natural Language Processing. It is a set of methods and techniques used for extracting subjective information from text or speech, such as opinions or attitudes. In simple terms, it involves classifying a piece of text as positive, negative or neutral.
+                </p>
             </section>
             
         </div>
