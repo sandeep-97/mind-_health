@@ -1,0 +1,22 @@
+@import '../../../style/variable.scss';
+
+.subnav_div {
+    @extend %subNav_block;
+    margin-left: 20em;
+
+    &__section {
+        width: 100%;
+        z-index: 100;
+        padding: 1em;
+
+        &__ul {
+            list-style: none;
+            font-size: 1em;
+            display: flex;
+
+            li {
+                padding-left: 0.5em;
+            }
+        }
+    }
+}
