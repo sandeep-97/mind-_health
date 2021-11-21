@@ -3,6 +3,8 @@ import Donate from "../components/donate-button-link";
 import GetHelp from "../components/help-button-link";
 import Logo from "../components/logo";
 import About from "../components/nav-bar_components/about";
+import Consult from "../components/nav-bar_components/consult";
+import GetInvolve from "../components/nav-bar_components/get_involve";
 import Information from "../components/nav-bar_components/information";
 import NewsSubnav from "../components/nav-bar_components/news_subnav";
 import '../style/home-page.scss'
@@ -76,7 +78,7 @@ const HomePage =()=>{
                 setOpen(open)
         }
     }
-
+    // this function stop default refreshing page when anchor tag is pressed
     const upvote=(e)=>{
         // e.stopPropogation()
         // e.nativeEvent.stopImmediatePropagation();
@@ -121,11 +123,13 @@ const HomePage =()=>{
                         <a href='/' onClick={()=>monitoringNavState('involve')}>
                             get involve
                         </a>
+                        {open.involveNav?<GetInvolve/>:null}
                     </li>
                     <li>
                         <a href='/' onClick={()=>monitoringNavState('consult')}>
                             consult
                         </a>
+                        {open.consultNav?<Consult/>:null}
                     </li>
                 </ul>
                 
